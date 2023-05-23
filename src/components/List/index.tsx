@@ -14,9 +14,10 @@ export const List = () => {
         <>
             <Box style={styles.container}>
                 <Text fontSize="lg">Listagem</Text>
+
                 <RectangleComponent
                 title="Desenvolvimento de site"
-                value={12000}
+                value={"R$ 12.000,00"}
                 valueColor="green"
                 subtitle="Vendas"
                 date="13/04/2020"
@@ -24,9 +25,17 @@ export const List = () => {
               
               <RectangleComponent
                 title="Hamburgueria Pizzy"
-                value={59}
+                value={"- R$ 59,00"}
                 valueColor="red"
                 subtitle="Alimentação"
+                date="10/04/2020"
+              />
+
+            <RectangleComponent
+                title="Aluguel do apartamento"
+                value={"- R$ 1.200,00"}
+                valueColor="red"
+                subtitle="Moradia"
                 date="10/04/2020"
               />
                 <FlatList<Records>

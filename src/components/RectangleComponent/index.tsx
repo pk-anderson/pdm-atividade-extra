@@ -4,7 +4,7 @@ import { styles } from "./styles";
 
 interface RectangleComponentProps {
   title: string;
-  value: number;
+  value: string;
   valueColor: "red" | "green";
   subtitle: string;
   date: string;
@@ -24,10 +24,7 @@ export const RectangleComponent: React.FC<RectangleComponentProps> = ({
       </View>
       <View style={styles.content}>
         <Text style={[styles.value, { color: valueColor }]}>
-          {value.toLocaleString("pt-BR", {
-            style: "currency",
-            currency: "BRL",
-          })}
+        {value}
         </Text>
       </View>
       <View style={styles.footer}>
